@@ -44,7 +44,13 @@ end
 
 gem "graphql", "~> 2.4"
 gem "faker", "~> 3.5", group: :development
-gem "annotate", "~> 3.2", group: :development
 gem "graphiql-rails", "~> 1.10", group: :development
 
 
+gem "pry-rails", "~> 0.3.11"
+
+gem "csv", "~> 3.3"
+
+gem "rspec", "~> 3.13"
+
+gem "rspec-rails", "~> 7.1"
