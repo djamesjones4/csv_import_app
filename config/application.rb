@@ -38,10 +38,10 @@ module CsvImportApp
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
     # Automatically annotate models after migrations
-    config.after_initialize do
-      require "annotate"
-      Annotate.load_tasks
-      AnnotateTask.new.invoke("models")
-    end
+    # config.after_initialize do
+    #   require "annotate"
+    #   Annotate.load_tasks
+    #   AnnotateTask.new.invoke("models")
+    # end
   end
 end
