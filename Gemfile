@@ -54,3 +54,5 @@ gem "csv", "~> 3.3"
 gem "rspec", "~> 3.13"
 
 gem "rspec-rails", "~> 7.1"
+
+gem "sprockets-rails", "~> 3.5"
