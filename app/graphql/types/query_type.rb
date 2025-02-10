@@ -27,5 +27,8 @@ module Types
     def test_field
       "Hello World!"
     end
+
+    field :get_users, resolver: Queries::GetUsers
+    field :get_books, resolver: Queries::GetBooks
   end
 end

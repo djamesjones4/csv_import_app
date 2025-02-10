@@ -19,7 +19,7 @@ require "csv"
     {
       number_of_imported_users: @imported_users.length,
       number_of_failed_imports: @failed_imports.length,
-      imported_subscribers: @imported_users,
+      imported_users: @imported_users,
       failed_imports: @failed_imports
     }
   end
@@ -39,12 +39,12 @@ require "csv"
           user.save!
           @imported_users << { first_name: user.first_name, last_name: user.last_name, email: user.email }
         rescue StandardError => e
-          rails.logger.error(e, "failed to save user: #{e.message}")
+          Rails.logger.error(e, "failed to save user: #{e.message}")
           @failed_imports << { first_name: user.first_name, last_name: user.last_name, email: user.email }
         end
       else
         @failed_imports << { first_name: user.first_name, last_name: user.last_name, email: user.email }
-        rails.logger.info("Invalid user data for row #{i + 1}: #{row}")
+        Rails.logger.info("Invalid user data for row #{i + 1}: #{row}")
       end
 
     end

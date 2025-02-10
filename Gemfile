@@ -45,6 +45,7 @@ end
 gem "graphql", "~> 2.4"
 gem "faker", "~> 3.5", group: :development
 gem "graphiql-rails", "~> 1.10", group: :development
+gem "factory_bot_rails", "~> 6.4", group: :development
 
 
 gem "pry-rails", "~> 0.3.11"
@@ -55,4 +56,7 @@ gem "rspec", "~> 3.13"
 
 gem "rspec-rails", "~> 7.1"
 
-gem "sprockets-rails", "~> 3.5"
+gem "sprockets-rails", "~> 3.5" # supports Graphiql for rails API only apps
+
+gem "open-uri", "~> 0.5.0"
+
