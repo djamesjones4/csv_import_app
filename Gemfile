@@ -42,7 +42,7 @@ end
 
 
 
-gem "graphql", "~> 2.4"
+gem "graphql", "~> 2.5"
 gem "faker", "~> 3.5", group: :development
 gem "graphiql-rails", "~> 1.10", group: :development
 
